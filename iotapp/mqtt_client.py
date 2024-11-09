@@ -24,6 +24,7 @@ def on_message(client, userdata, msg):
             temperature=data["temp"],
             time=data["time"]
         )
+        
     except json.JSONDecodeError as e:
         print(f"JSON failed {e}")
 
