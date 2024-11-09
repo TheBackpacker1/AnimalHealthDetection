@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h2>welcome to home </h2>
+{% for cheep in allcheep %}
+<ul style="padding:10px; border:1px solid black;width:max-content;">
+
+<li style="padding:10px;">id: {{cheep.idNecklace}}</li>
+<li style="padding:10px;">acc: {{cheep.acceleration}}</li>
+<li style="padding:10px;">gyr: {{cheep.gyroscope}}</li>
+<li style="padding:10px;">pulse: {{cheep.pulse}}</li>
+<li style="padding:10px;">temp: {{cheep.temperature}}</li>
+<li style="padding:10px;">time: {{cheep.time}}</li>
+
+</ul>
+{% endfor %}
+{% endblock %}
